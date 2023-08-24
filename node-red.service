@@ -1,0 +1,12 @@
+[Unit]
+Description=Node-RED
+After=syslog.target network.target
+
+[Service]
+ExecStart=/usr/bin/node-red-pi --max-old-space-size=128
+WorkingDirectory=/home/your_username/.node-red
+Restart=always
+User=your_username
+
+[Install]
+WantedBy=multi-user.target
