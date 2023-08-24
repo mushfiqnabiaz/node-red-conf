@@ -49,9 +49,9 @@ This guide explains how to configure Node-RED to automatically start on boot in 
        sudo systemctl status node-red
 
 4. **Troubleshooting**
-    *If the service fails to start, check the paths, permissions, and Node-RED installation.*
-    *Review Node-RED log files in the .node-red directory for more information.*
-    *Test running Node-RED manually to identify any errors.*
+    1. *If the service fails to start, check the paths, permissions, and Node-RED installation.*
+    2. *Review Node-RED log files in the .node-red directory for more information.*
+    3. *Test running Node-RED manually to identify any errors.*
 5. **Notes**
-    *Adjust paths and settings in the service file based on your installation.*
-    *This guide assumes a standard Node-RED setup. Customize commands if needed.*
+    1. *Adjust paths and settings in the service file based on your installation.*
+    2. *This guide assumes a standard Node-RED setup. Customize commands if needed.*
