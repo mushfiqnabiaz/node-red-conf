@@ -34,6 +34,8 @@ This guide explains how to configure Node-RED to automatically start on boot in 
 
     Replace your_username with your actual username and Save.
 
+    Or Download the file from the git and paste on the location.  
+
 
 3. **Enable the Service**
     Enable and start the service:
