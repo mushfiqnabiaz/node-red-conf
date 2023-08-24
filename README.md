@@ -44,7 +44,7 @@ change the username to your system username
         },
     1. Here Chanage user username for your login username
     2. Give the hash password in password section
-## Setup Instructions
+## Setup Instructions for Node-Red as a Service
 
 1. **Create a systemd Service File**
 
