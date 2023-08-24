@@ -15,3 +15,35 @@ This guide explains how to configure Node-RED to automatically start on boot in 
 
    ```bash
    sudo nano /etc/systemd/system/node-red.service
+
+2. **Add the following content to the file:**
+
+    ```bash
+        [Unit]
+            Description=Node-RED
+            After=syslog.target network.target
+
+        [Service]
+            ExecStart=/usr/bin/node-red-pi --max-old-space-size=128
+            WorkingDirectory=/home/your_username/.node-red
+            Restart=always
+            User=your_username
+
+        [Install]
+            WantedBy=multi-user.target
+
+Replace your_username with your actual username and Save.
+
+
+3. **Enable the Service**
+    Enable and start the service:
+    
+     ```bash
+        sudo systemctl enable node-red
+        sudo systemctl start node-red
+
+3. **Check Status**
+    Verify that the service is running:
+    
+     ```bash
+       sudo systemctl status node-red
