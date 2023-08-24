@@ -32,9 +32,9 @@ This guide explains how to configure Node-RED to automatically start on boot in 
         [Install]
             WantedBy=multi-user.target
 
-    Replace your_username with your actual username and Save.
+Replace your_username with your actual username and Save.
 
-    Or Download the file from the git and paste on the location.  
+Or Download the file from the git and paste on the location.  
 
 
 3. **Enable the Service**
