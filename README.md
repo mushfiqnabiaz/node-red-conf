@@ -4,7 +4,7 @@ This guide explains how to configure Node-RED to automatically start on boot in 
 
 ## Prerequisites
 
-- Ubuntu operating system (tested on Ubuntu XX.XX)
+- Ubuntu operating system (tested on Ubuntu 20.04)
 - Node-RED installed and working
 
 ## Setup Instructions
