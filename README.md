@@ -26,9 +26,24 @@ This guide explains how to configure Node-RED to automatically start on boot in 
 3. **Generate Admin Hash Password For Node-Red**
     ```bash
     node-red admin hash-pw
+Save the hash password
 4. **Change Setting.js for confiqure node red password**
     ```bash
-    nano /{{username}}/.node-red/settings.js
+    nano /username/.node-red/settings.js
+change the username to your system username
+
+5. **Find adminAuth and Modify the Settings.js**
+    ```bash
+            adminAuth: {
+            type: "credentials",
+            users: [{
+                username: "username",
+               password: "HashPassword",
+               permissions: "*"
+            }]
+        },
+    1. Here Chanage user username for your login username
+    2. Give the hash password in password section
 ## Setup Instructions
 
 1. **Create a systemd Service File**
