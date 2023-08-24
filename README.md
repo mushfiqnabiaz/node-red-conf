@@ -32,7 +32,7 @@ This guide explains how to configure Node-RED to automatically start on boot in 
         [Install]
             WantedBy=multi-user.target
 
-Replace your_username with your actual username and Save.
+    Replace your_username with your actual username and Save.
 
 
 3. **Enable the Service**
@@ -47,3 +47,11 @@ Replace your_username with your actual username and Save.
     
      ```bash
        sudo systemctl status node-red
+
+4. **Troubleshooting**
+    *If the service fails to start, check the paths, permissions, and Node-RED installation.*
+    *Review Node-RED log files in the .node-red directory for more information.*
+    *Test running Node-RED manually to identify any errors.*
+5. **Notes**
+    *Adjust paths and settings in the service file based on your installation.*
+    *This guide assumes a standard Node-RED setup. Customize commands if needed.*
