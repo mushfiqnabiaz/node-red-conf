@@ -1,11 +1,10 @@
 # Install Node-Red and Auto-Start Node-RED on Boot using systemd (Ubuntu)
 
-This guide explains how to configure Node-RED to automatically start on boot in Ubuntu using systemd.
+This guide explains how to install node-red and configure Node-RED to automatically start on boot in Ubuntu using systemd.
 
 ## Prerequisites
 
-- Ubuntu operating system (tested on Ubuntu 20.04)
-- Node-RED installed and working
+- Ubuntu operating system (tested on Ubuntu 20.04 or 22.04)
 
 ## Setup Node JS in Ubuntu system
 
@@ -30,7 +29,8 @@ Save the hash password
 4. **Change Setting.js for confiqure node red password**
     ```bash
     nano /username/.node-red/settings.js
-change the username to your system username
+
+1.*change the username to your system username*
 
 5. **Find adminAuth and Modify the Settings.js**
     ```bash
@@ -42,8 +42,8 @@ change the username to your system username
                permissions: "*"
             }]
         },
-    1. Here Chanage user username for your login username
-    2. Give the hash password in password section
+1. *Here Chanage user username for your login username*
+2. *Give the hash password in password section*
 ## Setup Instructions for Node-Red as a Service
 
 1. **Create a systemd Service File**
